@@ -12,14 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
+        /* Timeline specific styles */
         .timeline {
             position: relative;
             max-width: 600px;
@@ -37,22 +30,22 @@
             margin-left: -3px;
         }
 
-        .container {
+        .timeline .container {
             padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
         }
 
-        .container.left {
+        .timeline .container.left {
             left: 0;
         }
 
-        .container.right {
+        .timeline .container.right {
             left: 50%;
         }
 
-        .container::after {
+        .timeline .container::after {
             content: '';
             position: absolute;
             width: 25px;
@@ -65,11 +58,11 @@
             z-index: 1;
         }
 
-        .right::after {
+        .timeline .container.right::after {
             left: -16px;
         }
 
-        .content {
+        .timeline .content {
             padding: 20px 30px;
             background-color: white;
             position: relative;
@@ -132,7 +125,37 @@
 								Data Science leader with expertise in monetizing data for advertising media network. Proven track record of working with business stake holders to unlock untapped value and driving solution development through the entire life cycle. Growth mindset with expertise in marketing analytics, behaviour analytics with successful implementation in retail, advertisement and healthcare domains.
 							</p>
 					</section>
+!-- Experience -->
+				
+					<section id="experience" class="wrapper style1 spotlights">
+						<div class="timeline">
+						    <div class="container left">
+						        <div class="content">
+						            <h2>2020 - Present</h2>
+						            <p>Data Science Manager at Walgreens Boots Alliance </p>
+						            <p>Developed ML models for ad targeting, increased engagement by 20%, reduced data latency by 40%, improved marketing ROI by 25%, enabled onsite campaign measurement for suppliers.</p>
+						        </div>
+						    </div>
+						   
+						    <div class="container right">
+						        <div class="content">
+						            <h2>2008 - 2022</h2>
+						            <p>Data Scientist at Applied Behaviour Analytic Program </p>
+						            <p>Implemented data pipelines, performed statistical analysis, and developed marketing analytics tools.</p>
+						        </div>
+						    </div>
+						    <div class="container left">
+						        <div class="content">
+						            <h2>2003 - 2007</h2>
+						            <p>Software Engineer at Aspire Systems - Global Tech Services Firm </p>
+						            <p>Extracted and transformed data, built dashboards, and conducted predictive modeling.</p>
+						        </div>
+						    </div>
+						</div>
 
+							
+							
+					</section>
 				
 				
 				<!-- One -->
