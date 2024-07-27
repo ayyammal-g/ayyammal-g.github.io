@@ -13,9 +13,9 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
         /* Timeline specific styles */
-		.timeline {
+				.timeline {
 		    position: relative;
-		    max-width: 600px;
+		    max-width: 800px; /* Increase max-width to accommodate larger containers */
 		    margin: 0 auto;
 		}
 		
@@ -36,14 +36,15 @@
 		    background-color: #800080; /* Purple background for the container */
 		    width: 65%; /* Increased width */
 		    border-radius: 8px; /* Adding border-radius for smoother edges */
+		    box-sizing: border-box; /* Ensure padding and width are calculated correctly */
 		}
 		
 		.timeline .container.left {
-		    left: 0;
+		    left: -2.5%; /* Adjust to prevent overlap with the timeline */
 		}
 		
 		.timeline .container.right {
-		    left: 35%; /* Adjusted to match the increased width */
+		    left: 50%; /* Adjust to maintain correct positioning */
 		}
 		
 		.timeline .container::after {
